@@ -1,0 +1,217 @@
+:root {
+  --green: #4caf7d;
+  --green-dark: #34926a;
+  --red: #ef8a8a;
+  --red-dark: #d9635f;
+  --bg: #faf7f2;
+  --ink: #3a332c;
+  --border: #e2ddd3;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.topbar h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+#month-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  min-width: 160px;
+}
+
+.month-title {
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.weekday-head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #8a8175;
+  padding-bottom: 4px;
+}
+
+.day {
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 6px;
+  font: inherit;
+  cursor: default;
+}
+
+.day--empty {
+  visibility: hidden;
+}
+
+.day-number {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.day-label {
+  font-size: 0.62rem;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.day--green {
+  background: var(--green);
+  border-color: var(--green-dark);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.day--green:hover {
+  transform: scale(1.04);
+  background: var(--green-dark);
+}
+
+.day--holiday {
+  background: var(--red);
+  border-color: var(--red-dark);
+  color: #4a1f1f;
+}
+
+.day--neutral {
+  color: var(--ink);
+}
+
+.legend {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #6b6357;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.legend-dot--green {
+  background: var(--green);
+}
+
+.legend-dot--red {
+  background: var(--red);
+  margin-left: 12px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-overlay--hidden {
+  display: none;
+}
+
+.modal {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #8a8175;
+}
+
+#modal-title {
+  margin: 0 0 12px;
+}
+
+#modal-message {
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .day-number {
+    font-size: 0.75rem;
+  }
+  .day-label {
+    font-size: 0.55rem;
+  }
+}

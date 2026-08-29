@@ -1,0 +1,21 @@
+// Dies festius extrets del calendari (Copia_de_CALENDARI_2026-2027.pdf)
+// Format de clau: 'YYYY-MM-DD'
+export const holidays = {
+  '2026-09-11': 'Festa',
+  '2026-09-14': 'Festiu local',
+  '2026-10-12': 'Festa',
+  '2026-12-08': 'Festa',
+  '2026-12-24': 'Festa',
+  '2026-12-25': 'Festa',
+  '2026-12-26': 'Festa',
+  '2026-12-31': 'Festa',
+  '2027-01-01': 'Festa',
+  '2027-01-05': 'Festa',
+  '2027-01-06': 'Festa',
+  '2027-03-26': 'Festa',
+  '2027-03-29': 'Festa',
+  '2027-05-01': 'Festa',
+  '2027-05-27': 'Festiu local',
+  '2027-06-23': 'Festa',
+  '2027-06-24': 'Festa',
+};
