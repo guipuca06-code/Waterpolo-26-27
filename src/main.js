@@ -18,7 +18,7 @@ app.innerHTML = `
     <div id="month-container"></div>
 
     <p class="legend">
-      <span class="legend-dot legend-dot--green"></span> Dies d'entreno
+      <span class="legend-dot legend-dot--green"></span> Dies d'entrenament
       <span class="legend-dot legend-dot--red"></span> Festiu
     </p>
   </div>
