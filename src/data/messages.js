@@ -1,10 +1,4 @@
-// Missatge que es mostra en clicar un dia verd (dilluns, dimecres o divendres).
-//
-// Pots definir un missatge concret per a un dia específic afegint una entrada
-// amb la clau en format 'YYYY-MM-DD', per exemple:
-//   '2026-09-02': 'El teu missatge personalitzat aquí',
-//
-// Si un dia no té entrada pròpia, es fa servir defaultMessage.
+
 const DillunsFisicFora =
   "Físic + Aigua.\n" +
   "Cal portar:\n" +
@@ -31,11 +25,11 @@ const Divendres =
 export const messages = {
   
 '2026-09-07': DillunsFisicFora,
-'2026-09-14': DillunsFisicFora, // Festiu local, no es veurà
+'2026-09-14': DillunsFisicFora, 
 '2026-09-21': DillunsFisicFora,
 '2026-09-28': DillunsFisicFora,
 '2026-10-05': DillunsFisicFora,
-'2026-10-12': DillunsFisicFora, // Festa, no es veurà
+'2026-10-12': DillunsFisicFora, 
 '2026-10-19': DillunsFisicFora,
 '2026-10-26': DillunsFisicFora,
 '2026-11-02': DillunsFisicDins,
@@ -59,7 +53,7 @@ export const messages = {
 '2027-03-08': DillunsFisicDins,
 '2027-03-15': DillunsFisicFora,
 '2027-03-22': DillunsFisicDins,
-'2027-03-29': DillunsFisicFora, // Festa, no es veurà
+'2027-03-29': DillunsFisicFora,
 '2027-04-05': DillunsFisicDins,
 '2027-04-12': DillunsFisicFora,
 '2027-04-19': DillunsFisicDins,
@@ -118,7 +112,7 @@ export const messages = {
 '2027-06-23': Dimecres,
 '2027-06-30': Dimecres,
 '2026-09-04': Divendres,
-'2026-09-11': Divendres, // Festa, no es veurà
+'2026-09-11': Divendres, 
 '2026-09-18': Divendres,
 '2026-09-25': Divendres,
 '2026-10-02': Divendres,
@@ -133,8 +127,8 @@ export const messages = {
 '2026-12-04': Divendres,
 '2026-12-11': Divendres,
 '2026-12-18': Divendres,
-'2026-12-25': Divendres, // Festa, no es veurà
-'2027-01-01': Divendres, // Festa, no es veurà
+'2026-12-25': Divendres, 
+'2027-01-01': Divendres,
 '2027-01-08': Divendres,
 '2027-01-15': Divendres,
 '2027-01-22': Divendres,
@@ -146,7 +140,7 @@ export const messages = {
 '2027-03-05': Divendres,
 '2027-03-12': Divendres,
 '2027-03-19': Divendres,
-'2027-03-26': Divendres, // Festa, no es veurà
+'2027-03-26': Divendres, 
 '2027-04-02': Divendres,
 '2027-04-09': Divendres,
 '2027-04-16': Divendres,

@@ -19,19 +19,7 @@ src/
     messages.js         -> missatges que es mostren en clicar un dia verd
 ```
 
-## Com afegir els missatges definitius
 
-Edita `src/data/messages.js` i afegeix una entrada per cada dia amb la clau
-en format `'YYYY-MM-DD'`:
-
-```js
-export const messages = {
-  '2026-09-02': 'El teu missatge aquí',
-  '2026-09-04': 'Un altre missatge',
-};
-```
-
-Els dies que no tinguin missatge propi mostraran `defaultMessage`.
 
 ## Desenvolupament
 
