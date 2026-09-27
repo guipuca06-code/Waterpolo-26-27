@@ -7,8 +7,7 @@ const NOMS_MES = [
   'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre',
 ];
 
-// Mesos que es mostren: de setembre 2026 a juny 2027 (segons el calendari original).
-// Cada entrada és { year, month } amb month en format 0-11.
+
 export const MESOS = [
   { year: 2026, month: 8 },  // Setembre 2026
   { year: 2026, month: 9 },  // Octubre 2026

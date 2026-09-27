@@ -1,5 +1,4 @@
-// Dies festius extrets del calendari (Copia_de_CALENDARI_2026-2027.pdf)
-// Format de clau: 'YYYY-MM-DD'
+
 export const holidays = {
   '2026-09-11': 'Festa',
   '2026-09-14': 'Festiu local',
